@@ -2,6 +2,12 @@ import './App.css'
 
 function App() {
 
+  function onOpenInstagram(){
+      return "instagram://user?username=adarse112";
+      //  urlLink2 = "twitter://user?username=owendunnigan";
+      //  urlLink3 = "facebook://user?username=owendunnigan";
+ }
+
   const addEventToCalendar = () => {
     const event = {
       title: 'Meu Evento',
@@ -30,6 +36,7 @@ function App() {
       <button onClick={addEventToCalendar}>
         Adicionar ao Calendário INTENT
       </button>
+      <button onClick={onOpenInstagram}>Abrir Instagram</button>
     </>
   )
 }
