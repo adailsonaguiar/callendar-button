@@ -3,9 +3,10 @@ import './App.css'
 function App() {
 
   function onOpenInstagram(){
-      return "instagram://user?username=adarse112";
+      const url =  "instagram://user?username=adarse112";
       //  urlLink2 = "twitter://user?username=owendunnigan";
       //  urlLink3 = "facebook://user?username=owendunnigan";
+      window.location.href = url;
  }
 
   const addEventToCalendar = () => {
